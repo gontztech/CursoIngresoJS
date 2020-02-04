@@ -4,7 +4,7 @@ function mostrar()
 {
     var dato;
 
-    dato=prompt("ingrese un dato");
+    dato=prompt("ingrese un JORGE");
 
     alert(dato);
 
