@@ -4,9 +4,12 @@ function mostrar()
 {
     var dato;
 
-    dato=prompt("ingrese su nombre");
+    dato=prompt("ingrese su jorge");
 
     alert(dato);
+
+
+    
 
 }
 
