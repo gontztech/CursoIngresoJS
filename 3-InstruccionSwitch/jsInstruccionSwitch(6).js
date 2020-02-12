@@ -27,6 +27,7 @@ switch(laHora) {
     case "23":
     case "24":
        alert ("es de Noche");
+       break;
 
 
 
@@ -34,7 +35,7 @@ switch(laHora) {
 
     
     default:
-    alert ("la hora no existe");
+     alert ("la hora no existe");
 }
 
 
