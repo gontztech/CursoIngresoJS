@@ -7,7 +7,7 @@ var mesDelAño = document.getElementById('mes').value;
 switch(mesDelAño) {
     case "Julio":
     case "Agosto":
-         alert ("es el viernes de la jungla, a todo ojete ");
+         alert ("es el Invierno de la jungla, a todo ojete ");
          break;
 
     case ("Enero"):
@@ -20,7 +20,7 @@ switch(mesDelAño) {
 
     break;
     default:
-        alert ("Ya pasó el viernes de la jungla , te la perdiste hijo de re mil");
+        alert ("Ya pasó el Invierno de la jungla , te la perdiste hijo de re mil");
 
 
 

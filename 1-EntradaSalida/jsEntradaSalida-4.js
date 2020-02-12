@@ -8,7 +8,9 @@ function mostrar()
 
 	dato = document. getElementById ("elNombre").value;
 
-	prompt (dato);
+	elNombre=prompt("ingrese su nombre");
+
+	elNombre= (dato);
 
 }
 

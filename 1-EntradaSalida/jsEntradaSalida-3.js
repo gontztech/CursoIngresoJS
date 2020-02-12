@@ -6,7 +6,7 @@ function mostrar()
 
      nombre=document.getElementById("elNombre").value;
 
-     alert (nombre);
+     alert (nombre )
 	
 }
 
