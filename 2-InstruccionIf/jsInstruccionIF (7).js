@@ -4,6 +4,10 @@ function mostrar()
 var edad;
 edad=document.getElementById("edad").value;
 
+if (edad < "18" && "Soltero") {
+    alert ("Es muy pequeño para NO ser soltero");
+}
+
 
 	
 
