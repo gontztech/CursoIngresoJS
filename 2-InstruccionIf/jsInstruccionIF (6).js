@@ -10,7 +10,7 @@ function mostrar()
     } else {
 
         if (edad < 13) {
-                alert ("toda mia <3 ");
+                alert ("es menor");
 
         } else {
                 alert ("Adolescente");
