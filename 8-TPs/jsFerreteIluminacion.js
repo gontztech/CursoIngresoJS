@@ -17,7 +17,7 @@ function CalcularPrecio ()
 
 
    cantidad=document.getElementById("Cantidad").value;
-   marca=document.getElementById("Marca");.value;
+   marca=document.getElementById("Marca").value;
    descuento=document.getElementById("precioDescuento").value;
 
 
@@ -61,6 +61,7 @@ function CalcularPrecio ()
 
    }
    descuento = parseInt(descuento);
+   
 
 
 

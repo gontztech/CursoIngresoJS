@@ -4,18 +4,14 @@ function mostrar()
     var edad;
     edad=document.getElementById("edad").value;
 
-    if (edad > 17) {
+    if (edad >= 18) {
         alert ("es mayor");
-
-    } else {
-
+    }else{
         if (edad < 13) {
-                alert ("es menor");
-
-        } else {
-                alert ("Adolescente");
+            alert ("es menor");
+        }else{
+            alert ("es adolescente");
         }
-
     }
 
 
