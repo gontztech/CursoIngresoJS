@@ -9,58 +9,90 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 
  */
 function CalcularPrecio () 
-{  var lampara = 35;
+{  var lampara;
    var cantidad;
    var marca;
    var descuento;
    var impuesto;
+   var iibb;
+   var lamparaSinDescuento;
+   var precioFinal;
+   var precioConDescuento;
+
+   lampara = 35;
+   descuento = 0;
+
+   lampara=parseInt(lampara);
+   descuento=parseInt(descuento);
+   impuesto=parseInt(impuesto);
+   lamparaSinDescuento=parseInt(lamparaSinDescuento);
+   precioFinal=parseInt(precioFinal);
+   iibb=parseInt(iibb);
+   precioConDescuento=parseInt(precioConDescuento);
+
 
 
    cantidad=document.getElementById("Cantidad").value;
    marca=document.getElementById("Marca").value;
    descuento=document.getElementById("precioDescuento").value;
 
+   lamparaSinDescuento=lampara*cantidad;
 
-   if(cantidad >= 6){
-       descuento = 0.5;
+//ITEM A//
+
+   if(cantidad > 5){
+       descuento = 50;
+   
+//ITEM B//
    }else if (cantidad==5 && marca == "ArgentinaLuz") {
 
-       descuento = 0.4;
+       descuento = 40;
 
    }else if(cantidad ==5) {
 
-           descuento = 0.3;
-   }else if (cantidad == 4 && marca == "ArgentinaLuz") {
+           descuento = 30;
+   } //ITEM C//
 
-           descuento = 0.25;
+   else if (cantidad == 4 && marca == "ArgentinaLuz") {
+
+           descuento = 25;
    }else if (cantidad == 4 && marca == "FelipeLamparas") {
            
-           descuento = 0.25;
+           descuento = 25;
 
    }else if (cantidad == 4) {
 
-           descuento = 0.20;  
+           descuento = 20;  
 
-   }else if (cantidad == 3 && marca == "ArgentinaLuz" ) {
+   } //ITEM D//
 
-           descuento = 0.15;
+   else if (cantidad == 3 && marca == "ArgentinaLuz" ) {
+
+           descuento = 15;
 
    }else if (cantidad == 3 && marca == "FelipeLamparas") {
 
-           descuento = 0.10;
+           descuento = 10;
 
    }else if (cantidad == 3) {
 
-           descuento = 0.5;    
+           descuento = 5;    
 
-   }else if (descuento > 120 ) {
+        }
+  
+//ITEM E//
 
-           descuento = 0.10;
-
-           alert (" IIBB Usted pagó " +descuento);
-
-   }
-   descuento = parseInt(descuento);
+        precioConDescuento=lamparaSinDescuento*descuento/100;
+	precioFinal=(cantidad*lampara)-precioConDescuento;
+	iibb=precioFinal*10/100;
+	if(precioFinal>120)
+	{
+		impuesto=precioFinal+iibb;
+		precioFinal=impuesto
+		alert("Usted pagó $" +iibb+ " de impuestos");
+        }
+     iibb=parseInt(iibb);
+	document.getElementById('precioDescuento').value=precioFinal;
    
 
 
