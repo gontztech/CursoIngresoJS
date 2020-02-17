@@ -89,7 +89,7 @@ function CalcularPrecio ()
 	{
 		impuesto=precioFinal+iibb;
 		precioFinal=impuesto
-		alert("Usted pagó $" +iibb+ " de impuestos");
+		alert("IIBB Usted pagó $" +iibb+ " de impuestos");
         }
      iibb=parseInt(iibb);
 	document.getElementById('precioDescuento').value=precioFinal;
