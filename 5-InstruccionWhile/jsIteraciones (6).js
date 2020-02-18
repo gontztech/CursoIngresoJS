@@ -3,8 +3,9 @@ function mostrar()
 
 	var contador = 0;
 	var acumulador = 0;
+	var iteraciones = 5;
 
-	while (contador < 5) {
+	while (contador < iteraciones) {
 		contador ++ ;
 
 		var numero = prompt ("ingrese un numero");

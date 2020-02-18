@@ -5,31 +5,22 @@ function mostrar()
 	var acumulador=0;
 	var respuesta='si';
 
-	
-	while (contador < 5) {
+
+	while (respuesta == true  ) {
 		contador ++ ;
+	
+		var numero = prompt("ingrese un numero");
 
-		var numero = prompt ("ingrese un numero");
-
-		numero = parseInt(numero);
-
-
-
-		while (isNaN(numero )) {
-
-		numero = prompt ("Error!!! ingrese un numero") ;
-
-		numero = parseInt (numero) ;
-		}
-
-		acumulador += numero ;
+		numero=parseInt(numero);
+    while (isNaN(numero )) {
+		
+				numero = prompt ("Error!!! ingrese un numero") ;
+		
+				numero = parseInt (numero) ;
+		                                     }
 	}
- 
-console.log (acumulador) ;
-
-
-
+}		 	
 document.getElementById('suma').value=acumulador;
 document.getElementById('promedio').value=acumulador/contador;
 
-}//FIN DE LA FUNCIÓN
+//FIN DE LA FUNCIÓN
