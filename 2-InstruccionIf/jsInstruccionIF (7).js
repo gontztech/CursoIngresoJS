@@ -7,12 +7,12 @@ var estadoCivil;
 edad=document.getElementById("edad").value;
 estadoCivil=document.getElementById("estadoCivil").value;
 
-if (edad < "18" && estadoCivil == "Casado" || estadoCivil == "Divorciado" ) {
-    alert ("Es muy pequeño para NO ser soltero");
+if (edad < 18 && estadoCivil != "Soltero") {
+    alert ("muy pendejo para ponerla");
 }
 
 
-	
 
+	
 
 }//FIN DE LA FUNCIÓN

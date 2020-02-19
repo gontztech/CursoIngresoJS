@@ -5,12 +5,12 @@ function mostrar()
 	var max;
 	var min;
 
-	max = ("11");
+	max = ("10");
 	min = ("1");
 
-	random = Math.floor(Math.random()* (max - min) + min);
+	random = Math.floor(Math.random()* max + min);
 
 	console.log (random);
 	alert (random);
-
+	 
 }//FIN DE LA FUNCIÓN
