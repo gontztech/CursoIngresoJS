@@ -20,6 +20,9 @@ function mostrar()
         case "mercurio":
             alert ("aca hace calor la reconcha de tu madre");
             break;
+        case "sol":
+            alert ("NO PUEDE HACER TANTO CALOOOOOOOOOOR");
+            break;
         default:
             alert ("error. ingrese un planeta valido");
     }
