@@ -5,7 +5,7 @@ var edad;
 
 edad = document.getElementById("edad").value;
 
-if (edad >= "18") {
+if (edad >= 18) {
     alert ("es mayor");
 }else{ 
     alert ("es menor");
