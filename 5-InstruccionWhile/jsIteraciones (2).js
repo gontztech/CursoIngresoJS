@@ -1,11 +1,9 @@
 function mostrar()
 {
-	var iteracion = 10;
-	do {
-	   alert (iteracion);
-	   iteracion--;
+	var contador = 10;
 
-
-	}while (iteracion>0);
-
+	while (contador >0) {
+		alert (contador);
+		contador--;
+	}
 }//FIN DE LA FUNCIÓN

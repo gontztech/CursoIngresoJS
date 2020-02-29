@@ -1,12 +1,13 @@
 function mostrar()
 {
 
-var numero = prompt("ingrese un número entre 0 y 10.");
-while (numero < 0 || numero > 9 || isNaN(numero)  ) {
-	numero=prompt(" ingrese un numero correcto , " + numero + " es erroneo " );
+	var numero =prompt("ingrese un numero del 0 al 9");
+	while (numero <0 || numero > 9 || isNaN (numero) ){
+		numero=prompt("error. ingrese un numero del 0 al 9, " +numero+ " es incorrecto  " )
 
-	numero = parseInt(numero);
-}
-
-
+		}
+	
+	document.getElementById("Numero").value=numero;
 }//FIN DE LA FUNCIÓN
+
+
