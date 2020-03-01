@@ -4,13 +4,13 @@ function mostrar()
     var descuento=prompt("ingrese el descuento");
     var precioFinal;
 
-
-
-    precioFinal= (precio -  (precio*descuento/100) ) ;
-
-    document.getElementById("elPrecioFinal").value=precioFinal
-
     precioFinal=parseInt(precioFinal);
+    precio=parseInt(precio);
+    descuento=parseInt(descuento);
+
+    precioFinal=( precio- (precio*descuento/100));
+
+    document.getElementById("elPrecioFinal").value=precioFinal;
     
 
 }
