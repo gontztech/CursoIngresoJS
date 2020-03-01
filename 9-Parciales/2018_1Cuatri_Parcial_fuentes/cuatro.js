@@ -11,6 +11,8 @@ function mostrar()
     numeroDos=parseInt(numeroDos);
     resultado=parseInt(resultado);
 
+
+
     if (numeroUno > numeroDos) {
         resultado = (numeroUno-numeroDos);
         alert(resultado);
@@ -19,6 +21,11 @@ function mostrar()
         if (numeroUno < numeroDos){
             resultado = (numeroUno+numeroDos)
             alert (resultado);
+        }else{
+            if (numeroUno == numeroDos) {
+                resultado = (numeroUno+numeroDos)
+                alert (resultado);
+            }
         }
             
         }            if (resultado >= "11"){
