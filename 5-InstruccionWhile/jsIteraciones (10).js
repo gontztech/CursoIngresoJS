@@ -24,14 +24,14 @@ function mostrar()
 			  else cantidadCeros++;
 		  }
 	  }
-	  alert (" suma de negativos " +negativos );
-	  alert (" cantidad de negativos " +cantidadNegativos );
-	  alert (" promedio de negativos " +negativos / cantidadNegativos );
-	  alert (" suma de positivos " +positivos );
-	  alert (" cantidad de positivos " +cantidadPositivos );
-	  alert (" promedio de positivos "  +positivos / cantidadPositivos );
-	  alert (" cantidad de ceros " +cantidadCeros ) ;
-	  alert (" cantidad de pares "  + cantidadPares);
-	  alert (" suma total "  + (positivo + negativo)   );
+	  document.write("<p> Suma de negativos "     + negativos                + "</p>");
+  document.write("<p> Cantidad de negativos " + cantidadNegativos           + "</p>");
+  document.write("<p> Promedio de negativos " + negativos/cantidadNegativos  + "</p>");
+  document.write("<p> Suma de positivos "     + positivos                + "</p>");
+  document.write("<p> Cantidad de positivos " + cantidadPositivos           + "</p>");
+  document.write("<p> Promedio de negativos " + positivos/cantidadPositivos  + "</p>");
+  document.write("<p> Cantidad de ceros "     + cantidadCeros               + "</p>");
+  document.write("<p> Cantidad de pares "     + cantidadPares               + "</p>");
+  document.write("<p> Suma total "            + (positivos + negativos)   + "</p>");
 
 }//FIN DE LA FUNCIÓN
