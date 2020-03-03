@@ -24,7 +24,7 @@ function mostrar()
 			  else cantidadCeros++;
 		  }
 	  }
-	  document.write("<p> Suma de negativos "     + negativos                + "</p>");
+  document.write("<p> Suma de negativos "     + negativos                + "</p>");
   document.write("<p> Cantidad de negativos " + cantidadNegativos           + "</p>");
   document.write("<p> Promedio de negativos " + negativos/cantidadNegativos  + "</p>");
   document.write("<p> Suma de positivos "     + positivos                + "</p>");
