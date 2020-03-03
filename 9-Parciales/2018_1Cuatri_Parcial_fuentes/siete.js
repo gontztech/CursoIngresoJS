@@ -19,7 +19,7 @@ function mostrar()
         nota=prompt("ingrese una nota")
         nota = parseInt(nota);
 
-    }while (isNaN(nota)) || nota <0 || nota > 10);
+    }while (  nota <0 || nota > 10);
     
     do{
         sexo=prompt("ingrese sex");
@@ -42,3 +42,5 @@ function mostrar()
 
     }
     promedio = acumuladorNotas / contador;
+}
+}
