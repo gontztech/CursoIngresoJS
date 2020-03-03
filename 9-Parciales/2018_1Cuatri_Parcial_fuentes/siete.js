@@ -11,6 +11,7 @@ function mostrar()
     var sexoMinima;
     var contadorDeVarones=0;
     var promedio;
+    var contador=0;
 
     while (acumulador <5){
         acumulador++;
@@ -42,5 +43,9 @@ function mostrar()
 
     }
     promedio = acumuladorNotas / contador;
+    alert (" el promedio es de  " +promedio );
+    alert (" la nota mas baja es de " + notaMinima + " y el sexo de esa persona es " +sexoMinima );
+    alert (" la cantidad de varones que tuvieron una nota de 6 o mas es de  " +contadorDeVarones );
+    
 }
 }
