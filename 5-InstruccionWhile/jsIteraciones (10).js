@@ -29,12 +29,6 @@ function mostrar()
 			  }
 		  }
 	  
-
-
-
-
-
-
   document.write("<p> Suma de negativos "     + negativos                + "</p>");
   document.write("<p> Cantidad de negativos " + cantidadNegativos           + "</p>");
   document.write("<p> Promedio de negativos " + negativos/cantidadNegativos  + "</p>");
