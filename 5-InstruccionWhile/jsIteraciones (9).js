@@ -11,7 +11,7 @@ function mostrar()
 		respuesta=prompt("ingrese un numero - basta para parar");
 		if (parseInt(respuesta)){
 			if      (parseInt(respuesta) > numAlt) numAlt= parseInt(respuesta);
-			else if (parseInt(respuesta) < numBaj) numBaj=parseInt(respuesta);
+			else if (parseInt(respuesta) < numBaj || numBaj == 0 ) numBaj=parseInt(respuesta);
 		}
 	}
 	document.getElementById("maximo").value=numAlt;

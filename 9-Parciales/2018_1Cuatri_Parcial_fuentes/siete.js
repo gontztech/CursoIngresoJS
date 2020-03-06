@@ -13,7 +13,7 @@ function mostrar()
     var promedio;
     var contador=0;
 
-    while (acumulador <5){
+    while (acumulador <5){  
         acumulador++;
 
     do {
