@@ -4,6 +4,9 @@ function mostrar()
     var contadorI=0;
     var promedio=0;
     var contadorVaronesSeis=0;
+    var notaMinima=0;
+    var sexoNotaMinima;
+    var flagAl = 0;
 
 
     do {    
@@ -17,6 +20,13 @@ function mostrar()
         }while (sexo != "f" && sexo != "m" );
 
         if (sexo == "m" && notas >5)contadorVaronesSeis++;
+        else{
+            if (notas < notaMinima || flagAl == 0 ){
+                flagAl=1;
+                notaMinima = notas;
+                sexoNotaMinima= sexo;
+            }
+        }
 
         contadorI++;
         console.log(contadorI);
@@ -26,6 +36,7 @@ function mostrar()
 
     alert ( " el promedio es de  " + promedio);
     alert (" los varones con una nota de 6 o mayor son de  "  +contadorVaronesSeis+ " niños " );
+    alert (" la nota minima es de " +notaMinima+ " y el sexo de esa persona es " +sexoNotaMinima );
 
 
 
