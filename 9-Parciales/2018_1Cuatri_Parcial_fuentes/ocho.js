@@ -10,6 +10,9 @@ function mostrar()
     var contadorNegativo=0;
     var negativos=0;
     var positivos=0;
+    var numMin=0;
+    var flagMin=0
+    var contadorMin=0;
   
 
    do {
@@ -42,6 +45,10 @@ function mostrar()
     negativos+=numero;
     contadorNegativo++;
     
+    if (numero < numMin || flagMin== 0 ){
+        flagMin=1;
+        contadorMin++;
+    }
     
     
     respuesta=prompt("ingrese : si , si desea continuar ingresando datos");
