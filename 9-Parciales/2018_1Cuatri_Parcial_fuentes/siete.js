@@ -3,6 +3,7 @@ function mostrar()
     var iteraciones=5;
     var contadorI=0;
     var promedio=0;
+    var acumuladorNotas=0;
     var contadorVaronesSeis=0;
     var notaMinima=0;
     var sexoNotaMinima;
@@ -13,6 +14,8 @@ function mostrar()
         do{
             var notas=prompt("ingrese notas");
             notas=parseInt(notas);
+            acumuladorNotas+=notas;
+            acumuladorNotas=parseInt(notas);
         }while (isNaN(notas) || notas < 0 || notas > 10);
 
         do{
@@ -29,10 +32,11 @@ function mostrar()
         }
 
         contadorI++;
+        contadorI=parseInt(contadorI);
         console.log(contadorI);
     }while (contadorI< iteraciones);
 
-    promedio=(notas/contadorI);
+    promedio=(acumuladorNotas/contadorI);
 
     alert ( " el promedio es de  " + promedio);
     alert (" los varones con una nota de 6 o mayor son de  "  +contadorVaronesSeis+ " niños " );
